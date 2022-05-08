@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setWindowTitle("Snake");
 
     game = new Game;
     game->setFixedSize(game->DOT_WIDTH * game->FIELD_WIDTH, game->DOT_HEIGHT * game->FIELD_HEIGHT);
@@ -232,7 +233,6 @@ void MainWindow::on_button_options_clicked()
 void MainWindow::on_button_go_main_opt_clicked()
 {
     game->setDelay(600 / (ui->slider_difficulty->value() + 1));
-    qDebug() << game->getDelay();
     on_button_go_main_menu_clicked();
 }
 
