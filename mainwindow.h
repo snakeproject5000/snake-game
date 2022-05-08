@@ -48,6 +48,10 @@ private slots:
 
     void on_button_set_default_clicked();
 
+    void on_button_reset_stat_clicked();
+
+    void on_button_help_clicked();
+
 private:
     Ui::MainWindow *ui;
     Game *game;
