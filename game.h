@@ -1,12 +1,17 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include <iostream>
 #include <QWidget>
 #include <QVector>
 #include <QPoint>
 #include <QKeyEvent>
 #include <QPainter>
 #include <QTime>
+#include <QImage>
+#include <cstdlib>
+#include <climits>
+#include <algorithm>
 
 class Game : public QWidget
 {
@@ -56,6 +61,22 @@ private:
     QVector<QPoint> m_dots;  //  Вектор содержащий информацию о положении змейки.
 
     int score;
+
+    QImage apple_img;
+    QImage head_up_img;
+    QImage head_down_img;
+    QImage head_left_img;
+    QImage head_right_img;
+    QImage body_img;
+    QImage body_vertical_img;
+    QImage body_12_to_3_img;
+    QImage body_3_to_6_img;
+    QImage body_6_to_9_img;
+    QImage body_9_to_12_img;
+    QImage tail_up_img;
+    QImage tail_down_img;
+    QImage tail_left_img;
+    QImage tail_right_img;
 
 };
 
