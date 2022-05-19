@@ -623,11 +623,17 @@ QLabel {color: 'white'}</string>
    <widget class="QPushButton" name="button_set_default">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>40</x>
       <y>400</y>
-      <width>461</width>
+      <width>521</width>
       <height>71</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
@@ -650,11 +656,17 @@ QLabel {color: 'white'}</string>
    <widget class="QPushButton" name="button_go_main_opt">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>40</x>
       <y>490</y>
-      <width>461</width>
+      <width>521</width>
       <height>71</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
@@ -677,11 +689,17 @@ QLabel {color: 'white'}</string>
    <widget class="QPushButton" name="button_reset_stat">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>40</x>
       <y>310</y>
-      <width>461</width>
+      <width>521</width>
       <height>71</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
@@ -701,21 +719,21 @@ QLabel {color: 'white'}</string>
      <string>Сбросить статистику</string>
     </property>
    </widget>
-   <zorder>button_restart</zorder>
-   <zorder>button_set_default</zorder>
-   <zorder>button_go_main_opt</zorder>
-   <zorder>label_game_over_score</zorder>
-   <zorder>label_game_over</zorder>
+   <zorder>button_options</zorder>
+   <zorder>button_reset_stat</zorder>
    <zorder>button_start_game</zorder>
+   <zorder>label_game_over_score</zorder>
    <zorder>button_help</zorder>
    <zorder>button_go_main_menu</zorder>
    <zorder>button_exit</zorder>
+   <zorder>button_restart</zorder>
+   <zorder>button_set_default</zorder>
+   <zorder>button_go_main_opt</zorder>
+   <zorder>label_game_over</zorder>
    <zorder>title_label_2</zorder>
    <zorder>title_label</zorder>
    <zorder>slider_difficulty</zorder>
    <zorder>label_difficulty</zorder>
-   <zorder>button_reset_stat</zorder>
-   <zorder>button_options</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

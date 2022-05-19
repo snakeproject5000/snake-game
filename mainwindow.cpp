@@ -20,7 +20,6 @@ MainWindow::MainWindow(QWidget *parent)
     game_bar->setFont(QFont("Myanmar Text", 38));
     game_bar->setAlignment(Qt::AlignLeft);
 
-
     //  Объединение виджета игры с таблицей счета над ней.
     layout = new QVBoxLayout(this);
     layout->addWidget(game_bar);
@@ -44,8 +43,8 @@ MainWindow::~MainWindow()
 {
     delete ui;
     delete game;
-    delete layout;
     delete game_bar;
+    delete layout;
     delete STYLE_1;
     delete GAME_OVER_SCORE_TEXT;
 }
@@ -68,6 +67,8 @@ void MainWindow::timerEvent(QTimerEvent *)
     }
     game_bar->setText(std::to_string(game->getScore()).c_str());
 }
+
+
 
 int MainWindow::checkRecordFile()
 {

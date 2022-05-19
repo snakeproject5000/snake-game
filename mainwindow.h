@@ -56,8 +56,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
     Game *game;
-    QVBoxLayout *layout;
     QLabel *game_bar;
+    QVBoxLayout *layout;
 
     const char* STYLE_1 = "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 29, 23, 255), stop:1 rgba(0, 8, 34, 255))";
     const char* GAME_OVER_SCORE_TEXT = "Набрано очков: \n\nРекорд: ";
